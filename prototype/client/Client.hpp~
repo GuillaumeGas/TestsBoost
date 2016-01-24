@@ -1,0 +1,14 @@
+#pragma once
+
+#include <iostream>
+#include <boost/asio.hpp>
+
+using namespace boost::asio;
+
+class Client {
+public:
+  Client(io_service& ios);
+  ~Client();
+  
+  bool connect(ip::tcp::endpoint& endpoint);
+};

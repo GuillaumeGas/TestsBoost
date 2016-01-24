@@ -1,0 +1,6 @@
+#include "Client.hpp"
+
+using namespace std;
+using namespace boost::asio;
+
+Client::Client(io_service& ios, string& name) : m_ios(ios), m_name(name) {}
